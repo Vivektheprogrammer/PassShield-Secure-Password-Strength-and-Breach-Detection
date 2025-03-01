@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Strength Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PassShield:Secure Password Strength and Breach Detection</h1>
+    <input type="text" id="passwordInput" placeholder="Enter your password">
+    <div id="strengthMeter">
+      <div id="strengthBar"></div>
+    </div>
+    <div id="crackingTimes">
+      <strong>Cracking Times:</strong>
+      <ul>
+        <li>Brute Force: <span id="bruteForceTime">-</span></li>
+        <li>Dictionary Attack: <span id="dictionaryTime">-</span></li>
+        <li>Online Attack: <span id="onlineTime">-</span></li>
+      </ul>
+    </div>
+    <button id="checkBreach">Check Breach History</button>
+    <div id="breachResult"></div>
+    <button id="generatePassword">Generate Secure Password</button>
+    <div id="generatedPassword"></div>
+    <div id="passwordEvolution"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

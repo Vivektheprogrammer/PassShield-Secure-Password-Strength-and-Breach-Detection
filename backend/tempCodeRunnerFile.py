@@ -1,0 +1,1 @@
+  # Hash the password using SHA-1

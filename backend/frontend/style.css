@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Password Input */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Strength Meter */
+  #strengthMeter {
+    height: 10px;
+    background-color: #ddd;
+    margin: 10px 0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  #strengthBar {
+    height: 100%;
+    width: 0;
+    background-color: red;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Cracking Times */
+  #crackingTimes {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  #crackingTimes ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  #crackingTimes li {
+    margin: 5px 0;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Result Displays */
+  #breachResult, #generatedPassword, #passwordEvolution {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  #breachResult {
+    color: #d9534f; /* Red for breached passwords */
+  }
+  
+  #generatedPassword {
+    color: #5cb85c; /* Green for generated passwords */
+  }
+  
+  #passwordEvolution {
+    color: #f0ad4e; /* Orange for suggestions */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 400px) {
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    input[type="text"] {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
