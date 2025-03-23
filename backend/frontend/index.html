@@ -3,12 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Password Strength Analyzer</title>
+  <title>PassShield: Secure Password Strength and Breach Detection</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Background particles -->
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+
   <div class="container">
-    <h1>PassShield:Secure Password Strength and Breach Detection</h1>
+    <h1>PassShield: Secure Password Strength and Breach Detection</h1>
     <input type="text" id="passwordInput" placeholder="Enter your password">
     <div id="strengthMeter">
       <div id="strengthBar"></div>
@@ -21,12 +29,15 @@
         <li>Online Attack: <span id="onlineTime">-</span></li>
       </ul>
     </div>
-    <button id="checkBreach">Check Breach History</button>
+    <div class="button-container">
+      <button id="checkBreach">Check Breach History</button>
+      <button id="generatePassword">Generate Secure Password</button>
+    </div>
     <div id="breachResult"></div>
-    <button id="generatePassword">Generate Secure Password</button>
     <div id="generatedPassword"></div>
     <div id="passwordEvolution"></div>
   </div>
+  
   <script src="script.js"></script>
 </body>
 </html>
